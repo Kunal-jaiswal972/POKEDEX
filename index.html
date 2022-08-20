@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module" defer></script>
+    <title>POKEDEX</title>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <div class="overlay"></div>
+    <button id="hamburger" class="hamburger">
+      <div class="hamburger-top"></div>
+      <div class="hamburger-middle"></div>
+      <div class="hamburger-bottom"></div>
+    </button>
+    <div class="sidebar">
+      <ul></ul>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li></li>
+        <li class="logo">
+          <img src="./assets/pokemon--eps--vector-logo.png" alt="logo" />
+        </li>
+        <li class="home">
+          <a href="#">Home</a>
+          <img src="./assets/home-outline.svg" alt="home" />
+        </li>
+        <li class="random-pokemon">
+          <a href="#">random pokemon</a>
+          <img src="./assets/shuffle-outline.svg" alt="shuffle" />
+        </li>
+        <li class="type-search">
+          <a href="#">search by type</a>
+          <img src="./assets/chevron-forward-outline.svg" />
+        </li>
+        <li class="search-box">
+          <input
+            type="text"
+            id="searchBox"
+            placeholder="type your pokemon here"
+          />
+          <a id="searchBtn" href="#"
+            ><img src="./assets/search-outline.svg" alt="search-box"
+          /></a>
+          <ul class="search-list"></ul>
+        </li>
+      </ul>
+    </nav>
+    <main></main>
+    <div class="loading">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
